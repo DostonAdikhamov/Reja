@@ -18,13 +18,11 @@ app.post("/create-item", (req, res) => {
     console.log(req.body);
     res.json({ test: "success" });
 })
-
 app.get('/', function (req, res) {
     res.render("harid");
 });
-
 const server = http.createServer(app);
 let PORT = 3000;
 server.listen(PORT, function (){
-    console.log(`Server ${PORT}da muvaffatqilatli ishlayapti`);
+    console.log(`Server ${PORT}da muvaffatqiyatli ishlayapti`);
 });
