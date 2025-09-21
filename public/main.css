@@ -83,12 +83,10 @@ margin-bottom: 29.46px;
     align-items: center;
     font-family: sans-serif;
     font-style: normal;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 123.6%;
     color: #2b2b2b;
-    
-    
     }
 
 .main_frame .left_1 .kasb {
@@ -96,12 +94,12 @@ margin-bottom: 29.46px;
     font-feature-settings: 'calt' off;
     /* Paragraph Progress - 15 */
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 24px; /* 160% */
     text-transform: capitalize;
-    color: #767676;
+    color: black;
     }
 
 .main_frame .marginer {
@@ -134,21 +132,28 @@ margin-bottom: 29.46px;
 
 .tugma {
     position: relative;
-    width: 24.99px; 
-    height: 22.8px; 
+    width: 32px; 
+    height: 30px; 
     border-radius: 50%;
     filter: drop-shadow(0 4px rgba(0,0,0,.25));
     background: #ffb400;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
-.icon1 {
+.ulanish .tugma .icon-1 {
     position: relative;
-    left: 29.17%;
-    right: 27.08%;
-    margin-top: 5.86px;
+    /* left: 29.17%; */
+    /* right: 27.08%; */
+    /* margin-top: 5.86px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    /* background-color: aqua; */
 }
 .main_frame .left_2{
     position: relative;
@@ -169,6 +174,7 @@ display: flex;
 flex-direction: row;
 margin-top: 8px;
 }
+
 .main_frame .left_2 .left_2-2 .age{
 width: 221px;
 height: 25px;
@@ -176,6 +182,7 @@ flex-shrink: 0;
 justify-content: space-between;
 margin-top: 0px !important;
 }
+
 .main_frame .left_2 .left_2-2 .age .rectangle_1{
 display: flex;
 justify-content: center;
@@ -585,6 +592,8 @@ font-size: 48px;
 font-weight: 700;
 line-height: 59.33px;
 text-align: left;
+margin-top: 80px;
+margin-left: 40px;
 }
 
 .highlight {
@@ -594,8 +603,7 @@ text-align: left;
 position: relative;
 width: 424.44px;
 height: 85.61px;
-left: 61px;
-top: 80px;
+left: 41px;
 }
 .ptext h6{
 color: #767676;
@@ -606,7 +614,6 @@ font-weight: 400;
 line-height: 24px;
 }
 
-
 .btn button{
 width: 154px;
 height: 51px;
@@ -614,9 +621,8 @@ background-color: #FFB400;
 border: none;
 border-radius: 5px;
 position: relative;
-left: 56.7px;
-top: 88px;
-
+left: 36.7px;
+top: 18px;
 }
 
 .btn button a{
@@ -627,15 +633,15 @@ text-transform: uppercase;
 color: #2B2B2B;
 text-align: center;
 font-family: Inter;
-font-size: 16px;
+font-size: 20px;
 font-style: normal;
-font-weight: 500;
+font-weight: 700;
 line-height: normal;
 }
 
 .menProfile{
     position: relative;
-    top: -305.46px;
+    top: -365.46px;
     left: 583.3px;
  
 }
@@ -700,10 +706,10 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin-top: 85px;
+margin-top: 50px;
+margin-bottom: 40px;
 height: 190px;
 width: 971px;
-
 }
 .mid-mid h2{
 color: var(--Black, #2B2B2B);
@@ -720,9 +726,9 @@ text-align: center;
 font-kerning: none;
 font-feature-settings: 'calt' off;
 font-family: Inter;
-font-size: 15px;
+font-size: 20px;
 font-style: normal;
-font-weight: 400;
+font-weight: 500;
 line-height: 24px; 
 text-transform: capitalize; 
 }
