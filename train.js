@@ -1,3 +1,20 @@
+// B Task
+
+function raqamSana(str) {
+    let son = 0;
+    for (let i = 0; i < str.length; i++) {
+      if (!isNaN(str[i]) && str[i] !== ' ') {
+        son++;
+      }
+    }
+    return son;
+  }
+  
+  const natija = raqamSana("ad2a54y82t0sfgb9a0kfals9");
+  console.log("Natija:", natija);
+
+
+
 // console.log("Jack Maning Maslahatlari");
 // const list = [
 //     "Yaxshi talaba bo'ling", // 0 - 20
@@ -96,23 +113,23 @@
 //  ⭐️ Synchronous function vs Asynchronous function
 // Asynchronous: CALLBACK
 
-// DEFINE
-function qoldiqliBolish(a, b, callback) {
-  if (typeof a !== "number" || typeof b!== "number") {
-    console.log("Iltimos raqam kiriting, baraka topkur!", null)
-  } else if (b === 0) {
-    callback("Mahraj nolga teng bolmaydi", null);
-  } else {
-    const c = a % b;
-    callback(null, c);
-  }
-}
+// // DEFINE
+// function qoldiqliBolish(a, b, callback) {
+//   if (typeof a !== "number" || typeof b!== "number") {
+//     console.log("Iltimos raqam kiriting, baraka topkur!", null)
+//   } else if (b === 0) {
+//     callback("Mahraj nolga teng bolmaydi", null);
+//   } else {
+//     const c = a % b;
+//     callback(null, c);
+//   }
+// }
 
-// CALL
-qoldiqliBolish(7, 3, (err, data) => {
-  if (err) console.log("ERROR:", err);
-  else {
-    console.log("data:", data);
-    console.log("MANTIQLAR ...");
-  }
-});
+// // CALL
+// qoldiqliBolish(7, 3, (err, data) => {
+//   if (err) console.log("ERROR:", err);
+//   else {
+//     console.log("data:", data);
+//     console.log("MANTIQLAR ...");
+//   }
+// });
