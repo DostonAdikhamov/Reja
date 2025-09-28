@@ -7,6 +7,7 @@ const fs = require("fs");
 
 // MongoDB connection
 const db = require("./server").db();
+const mongodb = require("mongodb");
 
 let user;
 fs.readFile("database/user.json", "utf8", (err, data) => {
@@ -33,14 +34,17 @@ app.post("/create-item", (req, res) => {
     console.log(req.body);
     const yangi_reja = req.body.reja;
     db.collection("plans").insertOne({reja: yangi_reja}, (err, data) => {
-        if(err) {
-            console.log(err);
-            res.end("Xatolik yuz berdi");
-        }
-        else {
-            res.end("Muvaffaqqiyatli qo'shildi");
-        }
-    });
+        console.log(data.ops);
+        res.json(data.ops[0]);
+});
+});
+
+app.post("/delete-item", (req, res) => {
+    const id = req.body.id;
+    console.log(id);
+    db.collection("plans").deleteOne({_id: new mongodb.ObjectId(id)}, function(err, data) {
+        res.json({state: "success"});
+    })
 });
 
 app.get('/', function (req, res) {
@@ -50,7 +54,7 @@ app.get('/', function (req, res) {
     .toArray((err, data) => {
         if (err) {
             console.log(err);
-            req.end("something went wrong");
+            req.end("Something went wrong");
         }
         else {
             console.log(data);

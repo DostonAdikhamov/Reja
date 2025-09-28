@@ -1,17 +1,28 @@
+console.log("C Task");
+
+let word1 = "mitgroup31";
+let word2 = "guo3imtpr1";
+function sameOrNot (word1, word2) {
+  let sampleword1 = word1.toLowerCase().split('').sort().join("");
+  let sampleword2 = word2.toLowerCase().split('').sort().join("");
+  return sampleword1 === sampleword2;
+}
+console.log(sameOrNot(word1, word2))
+
 // B Task
 
-function raqamSana(str) {
-    let son = 0;
-    for (let i = 0; i < str.length; i++) {
-      if (!isNaN(str[i]) && str[i] !== ' ') {
-        son++;
-      }
-    }
-    return son;
-  }
+// function raqamSana(str) {
+//     let son = 0;
+//     for (let i = 0; i < str.length; i++) {
+//       if (!isNaN(str[i]) && str[i] !== ' ') {
+//         son++;
+//       }
+//     }
+//     return son;
+//   }
   
-  const natija = raqamSana("ad2a54y82t0sfgb9a0kfals9");
-  console.log("Natija:", natija);
+//   const natija = raqamSana("ad2a54y82t0sfgb9a0kfals9");
+//   console.log("Natija:", natija);
 
 
 
