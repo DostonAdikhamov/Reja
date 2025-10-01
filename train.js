@@ -51,7 +51,7 @@ class Shop {
 
 }
 
-const myShop = new Shop(9, 6, 8);
+const myShop = new Shop(9, 3, 1);
 myShop.leftOver();
 
 console.log("Sotuvlar: ");

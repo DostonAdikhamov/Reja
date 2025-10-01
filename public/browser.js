@@ -71,3 +71,13 @@ document.getElementById("clean-all").addEventListener("click",
         document.location.reload();
     });
 });
+
+// document.getElementById("clean-all").addEventListener("click", async () => {
+//    try {
+//      const response = await axios.post("/delete-all", { delete_all: true });
+//      alert(response.data.state);
+//      location.reload();
+//    } catch (err) {
+//      console.log("Xatolik:", err);
+//    }
+// });
