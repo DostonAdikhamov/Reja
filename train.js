@@ -1,13 +1,79 @@
-console.log("C Task");
+console.log("D Task");
+class Shop {
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+  }
 
-let word1 = "mitgroup31";
-let word2 = "guo3imtpr1";
-function sameOrNot (word1, word2) {
-  let sampleword1 = word1.toLowerCase().split('').sort().join("");
-  let sampleword2 = word2.toLowerCase().split('').sort().join("");
-  return sampleword1 === sampleword2;
+  getTime() {
+    let now = new Date();
+    let hour = now.getHours();
+    let minute = now.getMinutes();
+    return `${hour}:${minute}`;
+  }
+
+  sales(product, soni) {
+    if (product === 'non') {
+    this.non -= soni;
+    } else if (product === 'lagmon') {
+        this.lagmon -= miqdor;
+    } else if (product === 'cola') {
+        this.cola -= miqdor;
+    } else {
+        console.log("Bunday mahsulot yo'q!");
+    }
+
+    console.log(`Hozir ${this.getTime()} da ${soni} ta ${product} sotildi.`);
+    }
+
+
+  incoming(product, soni) {
+  if (product === 'non') {
+    this.non += soni;
+  } else if (product === 'lagmon') {
+    this.lagmon += soni;
+  } else if (product === 'cola') {
+    this.cola += soni;
+  } else {
+    console.log("Bunday mahsulot yo'q!");
+  }
+
+  console.log(`Hozir ${this.getTime()} da ${soni} ta ${product} qabul qilindi.`);
+  }
+
+  leftOver() {
+    console.log(`Hozir ${this.getTime()} da:
+    Non: ${this.non} ta
+    Lagmon: ${this.lagmon} ta
+    Cola: ${this.cola} ta`);
+  }
+
 }
-console.log(sameOrNot(word1, word2))
+
+const myShop = new Shop(9, 6, 8);
+myShop.leftOver();
+
+console.log("Sotuvlar: ");
+myShop.sales('non', 1);
+
+console.log("Incoming: ");
+myShop.incoming('lagmon', 2);
+
+console.log("Left Over: ");
+myShop.leftOver();
+
+
+// console.log("C Task");
+
+// let word1 = "mitgroup31";
+// let word2 = "guo3imtpr1";
+// function sameOrNot (word1, word2) {
+//   let sampleword1 = word1.toLowerCase().split('').sort().join("");
+//   let sampleword2 = word2.toLowerCase().split('').sort().join("");
+//   return sampleword1 === sampleword2;
+// }
+// console.log(sameOrNot(word1, word2));
 
 // B Task
 
