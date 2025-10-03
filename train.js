@@ -1,11 +1,10 @@
 console.log("Task E");
-
-
-
-
-
-
-
+let aylanma = "?imitpahs'o elaQ";
+function getReverse(gap) {
+    let togriAytish = aylanma.split('').reverse().join('');
+    return togriAytish;
+}
+console.log(getReverse(aylanma));
 
 // console.log("D Task");
 // class Shop {
