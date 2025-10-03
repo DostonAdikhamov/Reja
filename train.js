@@ -1,67 +1,76 @@
-console.log("D Task");
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-  }
-
-  getTime() {
-    let now = new Date();
-    let hour = now.getHours();
-    let minute = now.getMinutes();
-    return `${hour}:${minute}`;
-  }
-
-  sales(product, soni) {
-    if (product === 'non') {
-    this.non -= soni;
-    } else if (product === 'lagmon') {
-        this.lagmon -= miqdor;
-    } else if (product === 'cola') {
-        this.cola -= miqdor;
-    } else {
-        console.log("Bunday mahsulot yo'q!");
-    }
-
-    console.log(`Hozir ${this.getTime()} da ${soni} ta ${product} sotildi.`);
-    }
+console.log("Task E");
 
 
-  incoming(product, soni) {
-  if (product === 'non') {
-    this.non += soni;
-  } else if (product === 'lagmon') {
-    this.lagmon += soni;
-  } else if (product === 'cola') {
-    this.cola += soni;
-  } else {
-    console.log("Bunday mahsulot yo'q!");
-  }
 
-  console.log(`Hozir ${this.getTime()} da ${soni} ta ${product} qabul qilindi.`);
-  }
 
-  leftOver() {
-    console.log(`Hozir ${this.getTime()} da:
-    Non: ${this.non} ta
-    Lagmon: ${this.lagmon} ta
-    Cola: ${this.cola} ta`);
-  }
 
-}
 
-const myShop = new Shop(9, 3, 1);
-myShop.leftOver();
 
-console.log("Sotuvlar: ");
-myShop.sales('non', 1);
 
-console.log("Incoming: ");
-myShop.incoming('lagmon', 2);
+// console.log("D Task");
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
 
-console.log("Left Over: ");
-myShop.leftOver();
+//   getTime() {
+//     let now = new Date();
+//     let hour = now.getHours();
+//     let minute = now.getMinutes();
+//     return `${hour}:${minute}`;
+//   }
+
+//   sales(product, soni) {
+//     if (product === 'non') {
+//     this.non -= soni;
+//     } else if (product === 'lagmon') {
+//         this.lagmon -= miqdor;
+//     } else if (product === 'cola') {
+//         this.cola -= miqdor;
+//     } else {
+//         console.log("Bunday mahsulot yo'q!");
+//     }
+
+//     console.log(`Hozir ${this.getTime()} da ${soni} ta ${product} sotildi.`);
+//     }
+
+
+//   incoming(product, soni) {
+//   if (product === 'non') {
+//     this.non += soni;
+//   } else if (product === 'lagmon') {
+//     this.lagmon += soni;
+//   } else if (product === 'cola') {
+//     this.cola += soni;
+//   } else {
+//     console.log("Bunday mahsulot yo'q!");
+//   }
+
+//   console.log(`Hozir ${this.getTime()} da ${soni} ta ${product} qabul qilindi.`);
+//   }
+
+//   leftOver() {
+//     console.log(`Hozir ${this.getTime()} da:
+//     Non: ${this.non} ta
+//     Lagmon: ${this.lagmon} ta
+//     Cola: ${this.cola} ta`);
+//   }
+
+// }
+
+// const myShop = new Shop(9, 3, 1);
+// myShop.leftOver();
+
+// console.log("Sotuvlar: ");
+// myShop.sales('non', 1);
+
+// console.log("Incoming: ");
+// myShop.incoming('lagmon', 2);
+
+// console.log("Left Over: ");
+// myShop.leftOver();
 
 
 // console.log("C Task");
