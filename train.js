@@ -1,10 +1,24 @@
-console.log("Task E");
-let aylanma = "?imitpahs'o elaQ";
-function getReverse(gap) {
-    let togriAytish = aylanma.split('').reverse().join('');
-    return togriAytish;
-}
-console.log(getReverse(aylanma));
+console.log("Task F");
+function findDoublers(str) {
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j < str.length; j++) {
+      if (str[i] === str[j]) {
+        return true; 
+      }
+    }
+  }
+  return false; 
+};
+
+console.log(findDoublers("bye-bye"));
+
+// console.log("Task E");
+// let aylanma = "?imitpahs'o elaQ";
+// function getReverse(gap) {
+//     let togriAytish = aylanma.split('').reverse().join('');
+//     return togriAytish;
+// }
+// console.log(getReverse(aylanma));
 
 // console.log("D Task");
 // class Shop {
